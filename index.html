@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sahab Online Hotel Booking</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+        }
+
+        /* Navbar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background: #1e2a38;
+            color: #fff;
+        }
+
+        nav .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+            padding: 6px 12px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        nav .nav-links a:hover {
+            background: #28a745;
+        }
+
+        /* Hero Section */
+        .hero {
+            width: 100%;
+            height: 450px;
+            background: url('images/hero1.jpg') center/cover no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 48px;
+            font-weight: bold;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+        }
+
+        /* Paragraph Section */
+        .intro {
+            max-width: 900px;
+            margin: 40px auto;
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+            padding: 0 20px;
+        }
+
+        /* Room Cards */
+        .room-cards {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 50px 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+            width: 400px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            margin: 20px 0 10px;
+            color: #333;
+            font-size: 22px;
+        }
+
+        .card button {
+            margin-bottom: 20px;
+            padding: 12px 25px;
+            border: none;
+            background: #28a745;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .card button:hover {
+            background: #218838;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+
+        /* Footer */
+        footer {
+            background: #1e2a38;
+            color: #fff;
+            text-align: center;
+            padding: 20px 10px;
+            margin-top: 50px;
+        }
+
+        footer a {
+            color: #28a745;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 700px) {
+            .room-cards {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                width: 90%;
+            }
+
+            .hero {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">Sahab Online Hotel Booking</div>
+        <div class="nav-links">
+            <a href="userlogin.php">USERLOGIN</a>
+            <a href="adminlogin.php">ADMIN</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        Welcome to Sahab Hotel
+    </div>
+
+    <!-- Intro Paragraph -->
+    <div class="intro">
+        <p>Welcome to Sahab Online Hotel Booking!
+Whether you prefer a cozy Non-AC room or a luxurious AC room, we have the perfect stay for every traveler. Book your room online today and enjoy a comfortable stay with excellent services, hassle-free reservations, and a warm, welcoming atmosphere.</p>
+    </div>
+
+    <!-- Room Cards -->
+    <div class="room-cards">
+        <!-- Non-AC Room -->
+        <div class="card">
+            <img src="images/nonac.jpg" alt="Non-AC Room">
+            <h3>Non-AC Room</h3>
+            <button onclick="window.location.href='userlogin.php'">Book Now</button>
+        </div>
+
+        <!-- AC Room -->
+        <div class="card">
+            <img src="images/ac1.jpg" alt="AC Room">
+            <h3>AC Room</h3>
+            <button onclick="window.location.href='userlogin.php'">Book Now</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Sahab Online Hotel Booking. All rights reserved.</p>
+    
+    </footer>
+
+</body>
+</html>
